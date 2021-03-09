@@ -6,7 +6,7 @@ const mapBox = document.getElementById('map');
 // delegation
 if(mapBox){
     const locations = JSON.parse(mapBox.dataset.locations);
-    console.log(locations);
+    // console.log(locations);
     
     mapboxgl.accessToken = 'pk.eyJ1IjoidWRheW1pdHRhbCIsImEiOiJja2x2OTV1OGcybzk4Mm9uMXJndTZncWQ0In0.KtWy5eBzlBvvv0IxY5dd1Q';
     

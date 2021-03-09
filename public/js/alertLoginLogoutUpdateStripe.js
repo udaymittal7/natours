@@ -17,7 +17,7 @@ const login = async (email, password) => {
     try{
         const res = await axios({
             method: 'POST',
-            url: 'http://127.0.0.1:3000/api/v1/users/login',
+            url: '/api/v1/users/login',
             data: {
                 email,
                 password
@@ -51,7 +51,7 @@ const logout = async () => {
     try {
         const res = await axios({
             method: 'GET',
-            url: 'http://127.0.0.1:3000/api/v1/users/logout',
+            url: '/api/v1/users/logout',
         });
         if(res.data.status === 'success') location.reload(true);
     } catch (err) {
@@ -68,7 +68,7 @@ if(logOutBtn) {
 // type is either 'password' or 'data'
 const updateSettings = async (data,type) => {
     try {
-        const url = type === 'password' ? 'http://127.0.0.1:3000/api/v1/users/updateMyPassword' : 'http://127.0.0.1:3000/api/v1/users/updateMe';
+        const url = type === 'password' ? '/api/v1/users/updateMyPassword' : '/api/v1/users/updateMe';
         const res = await axios({
             method: 'PATCH',
             url,
@@ -93,7 +93,6 @@ if(userDataForm) {
         form.append('name', document.getElementById('name').value);
         form.append('email', document.getElementById('email').value);
         form.append('photo', document.getElementById('photo').files[0]);
-        console.log(form);
 
         updateSettings(form, 'data');
     });
@@ -124,9 +123,7 @@ const stripe = Stripe('pk_test_51IT4GwB3Oeuq0VpIksM9JGz2lmN2NOD20BHurZEdzRvzsqSI
 const bookTour = async tourID => {
   try {
     // 1) get checkout session from API
-    const session = await axios(`http://127.0.0.1:3000/api/v1/bookings/checkout-session/${tourID}`);
-  
-    console.log(session);
+    const session = await axios(`/api/v1/bookings/checkout-session/${tourID}`);
   
     // 2) create checkout form + charge credit card
     await stripe.redirectToCheckout({

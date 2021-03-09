@@ -175,10 +175,10 @@ toursSchema.pre(/^find/, function(next) {
     next();
 });
 
-toursSchema.post(/^find/, function(docs,next) {
-    console.log(`Query took ${Date.now() - this.start} ms`);
-    next();
-});
+// toursSchema.post(/^find/, function(docs,next) {
+//     console.log(`Query took ${Date.now() - this.start} ms`);
+//     next();
+// });
 
 
 //Aggregate Middleware
