@@ -16,10 +16,17 @@ Live demo (Feel free to visit) 👉 : https://natours-uday.herokuapp.com/
 
 * Authentication and Authorization
   - Login and logout
+  - Using JWT 
+  - Using best security practices like rate-limiter, xss-clean, helmat for headers.
 * Tour
   - Manage booking, check tours map, check users' reviews and rating
 * User profile
   - Update username, photo, email, and password
+  - See all your bought tours at the same place 
 * Credit card Payment
+  - Using stripe
+
+## API Documentation
+Link(https://documenter.getpostman.com/view/14039764/TWDfDDa9)
 
 
