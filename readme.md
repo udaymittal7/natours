@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://natours-uday.herokuapp.com/"><img src="https://github.com/udaymittal7/natours/blob/master/public/img/logo-green-round.png" alt="Natours" width="200"></a>
+  <a href="https://natours-com.onrender.com/"><img src="https://github.com/udaymittal7/natours/blob/master/public/img/logo-green-round.png" alt="Natours" width="200"></a>
   <br>
   Natours
   <br>
@@ -9,7 +9,7 @@
 <h4 align="center">An awesome tour booking site built on top of <a href="https://nodejs.org/en/" target="_blank">NodeJS</a>.</h4>
 
 ## Deployed Version
-Live demo (Feel free to visit) 👉 : https://natours-uday.herokuapp.com/
+Live demo (Feel free to visit) 👉 : https://natours-com.onrender.com/
 
 
 ## Key Features
@@ -54,13 +54,13 @@ Before using the API, you need to set the variables in Postman depending on your
 
 <b> API Features: </b>
 
-Tours List 👉 https://natours-uday.herokuapp.com/api/v1/tours
+Tours List 👉 https://natours-com.onrender.com/api/v1/tours
 
-Tours State 👉 https://natours-uday.herokuapp.com/api/v1/tours/tour-stats
+Tours State 👉 https://natours-com.onrender.com/api/v1/tours/tour-stats
 
-Get Top 5 Cheap Tours 👉https://natours-uday.herokuapp.com/api/v1/tours/top-5-cheap
+Get Top 5 Cheap Tours 👉https://natours-com.onrender.com/api/v1/tours/top-5-cheap
 
-Get Tours Within Radius 👉https://natours-uday.herokuapp.com/api/v1/tours/tours-within/200/center/34.098453,-118.096327/unit/mi
+Get Tours Within Radius 👉https://natours-com.onrender.com/api/v1/tours/tours-within/200/center/34.098453,-118.096327/unit/mi
 
 
 
